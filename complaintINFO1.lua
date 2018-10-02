@@ -114,7 +114,7 @@ if not file then
 		onEvent = myeventListener,
 		emboss = false,
 		x = display.contentCenterX,
-		y = 200,
+		y = 220,
 		width=220,
 		shape = "roundedRect",
 		fillColor = { default = { 1, 0.7, 0.5}, over = { 1, 0.7, 0.5} }
@@ -146,7 +146,7 @@ if not file then
 			local surveyText = {
 			   text =  line,
 	           x = display.contentCenterX,
-			   y = 350,
+			   y = 370,
 			   fontSize = native.SystemFont,
 			   width = 280,
 			   height = 220,
@@ -162,11 +162,11 @@ if not file then
 	
 		local complaintLink = widget.newButton(
 	{
-		label = "Click here to complaint",
+		label = "Click here to make\n      a complaint",
 		onEvent = myeventListener,
 		emboss = false,
 		x = display.contentCenterX,
-		y = 410,
+		y = 430,
 		width=220,
 		shape = "roundedRect",
 		fillColor = { default = { 1, 0.7, 0.5}, over = { 1, 0.7, 0.5} }

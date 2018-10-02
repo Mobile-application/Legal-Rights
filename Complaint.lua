@@ -63,7 +63,7 @@ function scene:create( event )
 	UnknownBreaches = widget.newButton(
 	{
 		id = "unknownBreaches",
-		label = "Breaches from unknown \n             resouces",
+		label = "Breaches from unknown \n              sources",
 		onEvent = myeventListener,
 		fontSize = 24,
 		emboss = false,

@@ -12,6 +12,7 @@ local scene = composer.newScene()
 
 local Welcome
 local myImage
+local myImage2
 
 -- -----------------------------------------------------------------------------------
 -- Code outside of the scene event functions below will only be executed ONCE unless
@@ -43,21 +44,21 @@ function scene:create( event )
 	sceneGroup:insert(background)
 	
 	--Adding Welcome Message
-	Welcome = display.newText("Monitoring App",display.contentCenterX,display.contentCenterY*0.40, "Comic Sans MS", 40)
+	Welcome = display.newText("Monitoring App",display.contentCenterX,display.contentCenterY*0.40, "Helvetica", 40)
 	sceneGroup:insert(Welcome)
 	--Displaying Legal Rights Text and icon
-	LegalRghts = display.newText("Legal Rights",display.contentCenterX*0.90,display.contentCenterY*2.0, "Comic Sans MS", 25)
+	LegalRghts = display.newText("Legal Rights",display.contentCenterX*0.90,display.contentCenterY*2.0, "Helvetica", 25)
 	sceneGroup:insert(LegalRghts)
-	myImage = display.newImage("Contact3.png", 140, 445 )
+	myImage = display.newImage("contact3.png", 140, 445 )
 	sceneGroup:insert(myImage)
 	myImage:addEventListener("tap", newscene)
 	
 	--Displaying Complaint icon and text
-	Complaint = display.newText("Complaint",display.contentCenterX*1.35,display.contentCenterY*1.27, "Comic Sans MS", 25)
+	Complaint = display.newText("Complaint",display.contentCenterX*1.35,display.contentCenterY*1.27, "Helvetica", 25)
 	sceneGroup:insert(Complaint)
-	myImage = display.newImage("Contact6.png", display.contentCenterX*1.40, display.contentCenterY*1.1 )
-	sceneGroup:insert(myImage)
-	myImage:addEventListener("tap", complaint)
+	myImage2 = display.newImage("contact6.png", display.contentCenterX*1.40, display.contentCenterY*1.1 )
+	sceneGroup:insert(myImage2)
+	myImage2:addEventListener("tap", complaint)
 
 
 	--Adding Timer in this app which display how long a user is seing the app
