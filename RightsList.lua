@@ -112,14 +112,14 @@ function scene:create( event )
 	Telecommunication = widget.newButton(
 	{
 		id = "Telecommunication",
-		label = "Telecommunication(interception and access) act 1979",
+		label = "Telecommunication  (interception and  \n     access) act 1979",
 		onEvent = myeventListener,
 		emboss = false,
 		left = 20,
-		top = 120,
+		top = 118,
 		fontSize = 16.5,
 		shape = "roundedRect",
-		width = 400,
+		width = 290,
 		height = 30,
 		fillColor = { default = { 1, 0.7, 0.5}, over = { 1, 0.7, 0.5} }
 	}
