@@ -18,44 +18,44 @@ end
 
 --sending user to Legal Rights file for description
 
---sending user to LR1 file for a brief description about this act
-local function LR1 ()	
-composer.gotoScene("LR1",{effect = "slideLeft", time = 500})
+--sending user to privacy_act file for a brief description about this act
+local function privacy_act ()	
+composer.gotoScene("privacy_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR2 file for a brief description about this act
-local function LR2 ()	
-composer.gotoScene("LR2",{effect = "slideLeft", time = 500})
+--sending user to telecommunication_act file for a brief description about this act
+local function telecommunication_act ()	
+composer.gotoScene("telecommunication_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR3 file for a brief description about this act
-local function LR3 ()	
-composer.gotoScene("LR3",{effect = "slideLeft", time = 500})
+--sending user to wa_act file for a brief description about this act
+local function wa_act ()	
+composer.gotoScene("wa_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR4 file for a brief description about this act
-local function LR4 ()	
-composer.gotoScene("LR4",{effect = "slideLeft", time = 500})
+--sending user to listening_act file for a brief description about this act
+local function listening_act ()	
+composer.gotoScene("listening_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR5 file for a brief description about this act
-local function LR5 ()	
-composer.gotoScene("LR5",{effect = "slideLeft", time = 500})
+--sending user to nsw_act file for a brief description about this act
+local function nsw_act ()	
+composer.gotoScene("nsw_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR6 file for a brief description about this act
-local function LR6 ()	
-composer.gotoScene("LR6",{effect = "slideLeft", time = 500})
+--sending user to nt_act file for a brief description about this act
+local function nt_act ()	
+composer.gotoScene("nt_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR7 file for a brief description about this act
-local function LR7 ()	
-composer.gotoScene("LR7",{effect = "slideLeft", time = 500})
+--sending user to qld_act file for a brief description about this act
+local function qld_act ()	
+composer.gotoScene("qld_act",{effect = "slideLeft", time = 500})
 end
 
---sending user to LR8 file for a brief description about this act
-local function LR8 ()	
-composer.gotoScene("LR8",{effect = "slideLeft", time = 500})
+--sending user to tas_act file for a brief description about this act
+local function tas_act ()	
+composer.gotoScene("tas_act",{effect = "slideLeft", time = 500})
 end
 
 
@@ -89,7 +89,7 @@ function scene:create( event )
 	sceneGroup:insert(head)
 	
 	--creating buttons for all legal rights
-	-- creating button for legal right 1 
+	-- creating button for privacy_act
 	Privacy = widget.newButton(
 	{
 		id = "Privacy",
@@ -106,9 +106,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(Privacy)
-	Privacy:addEventListener ("touch", LR1)
+	Privacy:addEventListener ("touch", privacy_act)
 	
-	-- creating button for legal right 2
+	-- creating button for telecommunication_act
 	Telecommunication = widget.newButton(
 	{
 		id = "Telecommunication",
@@ -125,9 +125,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(Telecommunication)
-	Telecommunication:addEventListener ("touch", LR2)	
+	Telecommunication:addEventListener ("touch", telecommunication_act)	
 	
-	-- creating button for legal right 3
+	-- creating button for wa_act
 	WA = widget.newButton(
 	{
 		id = "WA",
@@ -144,9 +144,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(WA)
-	WA:addEventListener ("touch", LR3)
+	WA:addEventListener ("touch", wa_act)
 	
-	-- creating button for legal right 4
+	-- creating button for listening_act
 	ACT = widget.newButton(
 	{
 		id = "ACT",
@@ -163,9 +163,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(ACT)
-	ACT:addEventListener ("touch", LR4)
+	ACT:addEventListener ("touch", listening_act)
 
-	-- creating button for legal right 5
+	-- creating button for nsw_act
 	NSW = widget.newButton(
 	{
 		id = "NSW",
@@ -181,9 +181,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(NSW)
-	NSW:addEventListener ("touch", LR5)
+	NSW:addEventListener ("touch", nsw_act)
 	
-	-- creating button for legal right 6
+	-- creating button for nt_act
 	NT = widget.newButton(
 	{
 		id = "NT",
@@ -200,9 +200,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(NT)
-	NT:addEventListener ("touch", LR6)
+	NT:addEventListener ("touch", nt_act)
 	
-	-- creating button for legal right 7
+	-- creating button for qld_act
 	Qld = widget.newButton(
 	{
 		id = "Qld",
@@ -219,9 +219,9 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(Qld)
-	Qld:addEventListener ("touch", LR7)
+	Qld:addEventListener ("touch", qld_act)
 		
-	-- creating button for legal right 8		
+	-- creating button for tas_act		
 	Tas = widget.newButton(
 	{
 		id = "Tas",
@@ -238,7 +238,7 @@ function scene:create( event )
 	}
 	)
 	sceneGroup:insert(Tas)
-	Tas:addEventListener ("touch", LR8)
+	Tas:addEventListener ("touch", tas_act)
 	
 				
 end
